@@ -1,55 +1,193 @@
 /* Mobile-first responsive design for max-width 480px */
 @media (max-width: 480px) {
+  body {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .app-bg {
+    padding: 1rem;
+    min-height: 100vh;
+  }
+  
   .container {
-    padding: 0.5rem;
-    width: 100vw;
+    padding: 0;
+    width: 100%;
     min-width: 0;
     box-sizing: border-box;
+    margin: 0;
+    max-width: none;
   }
+  
   .main-grid {
     display: block;
-    width: 100vw;
+    width: 100%;
     min-width: 0;
     padding: 0;
   }
-  .activity-form, .summary, .recent-activities {
+  
+  .header {
+    padding: 0 0 1rem 0;
+    text-align: center;
+    margin-bottom: 0;
+  }
+  
+  .header-img {
+    margin-bottom: 8px;
+    gap: 8px;
+  }
+  
+  .paw {
+    font-size: 32px;
+  }
+  
+  .heart {
+    font-size: 24px;
+  }
+  
+  .title {
+    font-size: 1.8rem;
+    margin-bottom: 4px;
+  }
+  
+  .subtitle {
+    font-size: 1rem;
+    margin-top: 2px;
+  }
+  
+  .walk-prompt {
+    margin: 0 0 1rem 0;
+    padding: 1rem;
+    border-radius: 12px;
+    gap: 12px;
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .activity-form, .summary, .recent-activities, .chatbot {
     width: 100%;
     margin: 0 0 1rem 0;
     box-sizing: border-box;
-    padding: 0.5rem;
+    padding: 1rem;
+    border-radius: 12px;
   }
-  .header {
-    padding: 0.5rem;
-    text-align: center;
+  
+  .activity-form-header, .summary-header, .chatbot-header {
+    margin-bottom: 12px;
   }
-  .title {
-    font-size: 1.3rem;
+  
+  .activity-form-icon, .summary-icon, .chatbot-icon {
+    font-size: 20px;
   }
-  .subtitle {
-    font-size: 1rem;
+  
+  .activity-form-title, .summary-title, .chatbot-title {
+    font-size: 18px;
   }
+  
   .activity-form-fields input, .activity-form-fields select {
     font-size: 1rem;
-    padding: 0.5rem;
+    padding: 0.75rem;
     width: 100%;
     box-sizing: border-box;
+    border-radius: 8px;
   }
+  
+  .label {
+    font-size: 0.9rem;
+    margin-bottom: 4px;
+  }
+  
   .button {
     font-size: 1rem;
-    padding: 0.5rem 1rem;
+    padding: 0.75rem 1rem;
+    width: 100%;
+    border-radius: 8px;
   }
-  .summary-bars {
+  
+  .summary-stats {
     flex-direction: column;
     gap: 0.5rem;
   }
+  
   .stat {
     width: 100%;
     margin-bottom: 0.5rem;
+    padding: 0.75rem;
+    border-radius: 8px;
   }
+  
+  .stat-value {
+    font-size: 18px;
+  }
+  
+  .stat-label {
+    font-size: 12px;
+  }
+  
+  .progress-bar-label {
+    font-size: 11px;
+  }
+
+  .chatbot-history {
+    min-height: 120px;
+    max-height: 200px;
+    overflow-y: auto;
+    margin-bottom: 12px;
+    padding: 0.5rem;
+    border-radius: 6px;
+  }
+  
+  .chatbot-input-row {
+    gap: 6px;
+  }
+  
+  .chatbot-input {
+    padding: 0.75rem;
+    border-radius: 6px;
+    font-size: 1rem;
+  }
+  
+  .chatbot-send {
+    padding: 0.75rem 1rem;
+    border-radius: 6px;
+    font-size: 1rem;
+  }
+  
+  .recent-activities-title {
+    font-size: 18px;
+    margin-bottom: 8px;
+  }
+  
+  .recent-activities-icon {
+    font-size: 18px;
+  }
+  
   .recent-activity-table {
-    font-size: 0.9rem;
+    font-size: 0.85rem;
     width: 100%;
     overflow-x: auto;
+  }
+  
+  .recent-activity-table th {
+    font-size: 13px;
+    padding: 6px 4px 4px 0;
+  }
+  
+  .recent-activity-table td {
+    font-size: 13px;
+    padding: 6px 4px 6px 0;
+  }
+  
+  .recent-activity-date {
+    font-size: 14px;
+    margin: 12px 0 4px 0;
+  }
+  
+  .goal-notification {
+    margin: 0 0 1rem 0;
+    padding: 1rem;
+    font-size: 16px;
+    border-radius: 12px;
   }
 }
 .recent-activity-table {
@@ -329,6 +467,8 @@ body {
 }
 .chatbot-history {
   min-height: 60px;
+  max-height: 300px;
+  overflow-y: auto;
   margin-bottom: 16px;
   background: #fff;
   border-radius: 8px;
