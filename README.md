@@ -8,6 +8,7 @@
 - [Backend Environment Setup](#backend-environment-setup)
 - [Trade-offs](#trade-offs)
 - [Links](#links)
+- [Live Demo](#live-demo)
 
 [![React](https://img.shields.io/badge/Frontend-React-blue?logo=react)](https://react.dev)
 [![Express](https://img.shields.io/badge/Backend-Express-green?logo=express)](https://expressjs.com)
@@ -54,7 +55,11 @@
 ## Trade-offs
 - No database: activities are not persisted.
 - Secrets managed via environment variables.
+- Free Render deployment causes AI API call delay of 30 seconds after waking up from the inactivity mode.
 - Mobile-first UI, but no authentication or persistent storage for simplicity.
 
 ## Links
 [Frontend (Vercel)](https://vercel.com) | [Backend (Render)](https://render.com) | [Gemini API](https://ai.google.dev)
+
+## Live Demo
+[Pet Activity Tracker (Deployed Frontend)](https://pet-activity-tracker-six.vercel.app/)
