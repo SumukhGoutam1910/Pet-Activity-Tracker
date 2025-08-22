@@ -1,5 +1,14 @@
 # Pet Activity Tracker
 
+## Table of Contents
+- [Badges](#badges)
+- [Stack Overview](#stack-overview)
+- [Quick Start](#quick-start)
+- [Frontend Environment Setup](#frontend-environment-setup)
+- [Backend Environment Setup](#backend-environment-setup)
+- [Trade-offs](#trade-offs)
+- [Links](#links)
+
 [![React](https://img.shields.io/badge/Frontend-React-blue?logo=react)](https://react.dev)
 [![Express](https://img.shields.io/badge/Backend-Express-green?logo=express)](https://expressjs.com)
 [![Gemini API](https://img.shields.io/badge/AI-Gemini-yellow?logo=google)](https://ai.google.dev)
@@ -47,5 +56,5 @@
 - Secrets managed via environment variables.
 - Mobile-first UI, but no authentication or persistent storage for simplicity.
 
----
+## Links
 [Frontend (Vercel)](https://vercel.com) | [Backend (Render)](https://render.com) | [Gemini API](https://ai.google.dev)
